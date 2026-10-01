@@ -70,7 +70,6 @@ while True:
                         print("Valor Inválido!")
                 veiculo = Caminhao(placa, modelo, valor_diaria, seguro, carga_ton)
             frota[veiculo.placa] = veiculo
-
         case "2":
             for i, (placa, veiculo) in enumerate(frota.items(), start=1):
                 print(f"[{i}] - Placa: {placa} | Modelo: {veiculo.modelo} | Alugado: {veiculo.alugado}")
